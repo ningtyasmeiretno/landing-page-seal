@@ -1,0 +1,96 @@
+<div class="">
+  <img src="../../../assets/images/bg-arc.svg" alt="" class="lg:w-full">
+</div>
+<section id="program" class="w-full py-5 md:py-20 flex flex-col items-center justify-center md:px-20 px-5 bg-program">
+    <div class="text-center">
+        <h1 class="font-raleway text-xl-4 font-black leading-2 text-text">PROGRAMMES</h1>
+    </div>
+    <div class="md:w-8/12 w-full px-5 md:px-0 mb-16">
+        <p class="font-roboto md:text-xl text-center mb-4 text-text">Delivering across President Jokowi’s five strategic directions to accelerate digital transformation Boosting Indonesia digital economy through an end-to-end cloud technological adoption, include a strong curated set of SMEs, a robust startup community, valuable solutions, and a healthy digital ecosystem in Indonesia, contributing to the larger impacts of economic stimulation and strengthening of public sector governance.</p>
+    </div>
+    
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <img src="../../../assets/images/illustration-programme1.png" alt="education" class="mb-5 md:w-48 w-20">
+                <span class="text-sm md:text-2xl">EDUCATION</span>
+            </ng-template>
+            <div class="text-center md:pt-24 pt-10">
+              <h1 class="font-raleway font-extrabold text-text text-medium md:text-xl-2 mb-5">IMPLEMENTATION</h1>
+            </div>
+            <swiper [slidesPerView]="1" [pagination]=true [autoplay]=false class="md:w-8/12 w-9/12">
+              <ng-template swiperSlide *ngFor="let e of education">
+                <div class="flex flex-col items-center justify-center">
+                  <img [src]="e.img" alt="" class="w-80 h-80 object-cover mb-5">
+                  <h6 class="font-raleway text-base md:text-medium font-extrabold text-text text-center">{{e.title}}</h6>
+                  <p class="font-roboto text-xs md:text-base text-text text-center">{{e.desk}}</p>
+                </div>
+            </ng-template>
+            </swiper>
+          </mat-tab>
+          
+          <mat-tab>
+            <ng-template mat-tab-label>
+                <img src="../../../assets/images/illustration-programme2.png" alt="healthcare" class="mb-5 md:w-48 w-20">
+              <span class="text-sm md:text-2xl">HEALTHCARE
+              </span> 
+            </ng-template>
+            <div class="text-center md:pt-24 pt-10">
+              <h1 class="font-raleway font-extrabold text-text text-medium md:text-xl-2 mb-5">IMPLEMENTATION</h1>
+            </div>
+            
+            <swiper [slidesPerView]="1" [pagination]=true [autoplay]=false class="md:w-8/12 w-9/12">
+              <ng-template swiperSlide *ngFor="let h of health">
+                <div class="flex flex-col items-center justify-center">
+                  <img [src]="h.img" alt="" class="w-80 h-64 object-cover mb-5">
+                  <h6 class="font-raleway text-base md:text-medium font-extrabold text-text text-center">{{h.title}}</h6>
+                  <p class="font-roboto text-xs md:text-base text-text text-center">{{h.desk}}</p>
+                </div>
+            </ng-template>
+            </swiper>
+          </mat-tab>
+          
+          <mat-tab >
+            <ng-template mat-tab-label>
+                <img src="../../../assets/images/illustration-programme3.png" alt="smart cities" class="mb-5 md:w-48 w-20">
+                <span class="text-sm md:text-2xl">SMART CITIES</span>  
+            </ng-template>
+            <div class="text-center md:pt-24 pt-10">
+              <h1 class="font-raleway md:text-xl-2 text-medium font-extrabold text-text mb-5">IMPLEMENTATION</h1>
+            </div>
+            
+            <swiper [slidesPerView]="2" [pagination]=true [autoplay]=false class="md:w-8/12 w-9/12">
+              <ng-template swiperSlide *ngFor="let s of smart">
+                <div class="flex flex-col items-center justify-center mb-24">
+                  <img [src]="s.img" alt="" class="w-80 h-64 object-cover mb-5">
+                  <h6 class="font-raleway text-base md:text-medium font-extrabold text-text text-center">{{s.title}}</h6>
+                  <p class="font-roboto text-xs md:text-base text-text text-center">{{s.desk}}</p>
+                </div>
+            </ng-template>
+            </swiper>
+          </mat-tab>
+     
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <img src="../../../assets/images/illustration-programme4.png" alt="small & medium business" class="mb-5 md:w-48 w-20">
+            <span class="text-sm md:text-2xl">SMALL & MEDIUM
+              BUSINESS</span>
+          </ng-template>
+          <div class="text-center md:pt-24 pt-10">
+            <h1 class="font-raleway font-extrabold text-text text-medium md:text-xl-2 mb-5">IMPLEMENTATION</h1>
+          </div>
+          <swiper [slidesPerView]="1" [pagination]=true [autoplay]=false class="md:w-8/12 w-9/12">
+            <ng-template swiperSlide *ngFor="let b of business">
+              <div class="flex flex-col items-center justify-center">
+                <img [src]="b.img" alt="" class="w-80 h-64 object-cover mb-5">
+                <h6 class="font-raleway text-base md:text-medium font-extrabold text-text text-center">{{b.title}}</h6>
+                <p class="font-roboto text-xs md:text-base text-text text-center">{{b.desk}}</p>
+              </div>
+          </ng-template>
+          </swiper>
+        </mat-tab>
+    </mat-tab-group>
+</section>
+<div class="">
+  <img src="../../../assets/images/bg-arc.svg" alt="" class="transform rotate-180 lg:w-full">
+</div>

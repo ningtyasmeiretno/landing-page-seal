@@ -1,0 +1,15 @@
+<section id="partners" class="md:mt-20 md:p-20 relative">
+    <div class="flex flex-row mr-40 z-0 absolute md:top-0 md:ml-40">
+        <img src="../../../assets/images/Ornament.png" alt="ornament" class="w-20 md:w-56 transform -rotate-90" >
+    </div>
+    <div class="z-10 relative top-14 md:top-10">
+        <h4 class="font-raleway text-base font-extrabold leading-2 text-center md:text-5xl">PARTNERS</h4>
+        <div class="grid grid-cols-7 gap-5 md:gap-16  md:mt-16">
+            <div class=" pt-5 md:py-8" *ngFor="let p of partners">
+               <a href="{{p.link}}" >
+                <img src="{{p.images}}"  alt="partner-images" class="cursor-pointer w-full h-20 md:h-32 place-content-center object-contain">
+               </a>
+            </div>
+        </div>
+    </div>
+</section>

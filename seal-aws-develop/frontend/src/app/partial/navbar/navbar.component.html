@@ -1,0 +1,60 @@
+<nav class="">
+  <div class="hidden md:flex w-full flex-row justify-center items-center align-middle fixed px-24 top-0 py-5 z-50 bg-g-top">
+    <div class="flex flex-row space-x-14 items-center font-raleway">
+      <a href="javascript:void(0)" [ngxScrollTo]="'#about'"
+        class="text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">About Us</a>
+      <a href="javascript:void(0)" [ngxScrollTo]="'#program'" 
+        class="text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Programmes</a>
+        <a href="javascript:void(0)" [ngxScrollTo]="'#team'" 
+        class="text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Team</a>
+      <a href="javascript:void(0)" [ngxScrollTo]="'#partners'"
+        class="text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Partners</a>
+      <a href="javascript:void(0)" [ngxScrollTo]="'#contact'" class="text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Contact Us</a>
+    </div>
+  </div>
+  <!-- mobile -->
+  <div class="fixed z-50 w-full bg-g-top md:hidden">
+    <div class="flex justify-end items-end" >
+      <button class="toggle" (click)="openMenu()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" class="text-text">menu</mat-icon>
+      </button>
+    </div>
+    
+    <div class="" id="menu" [ngClass]="[showNav == true ? '' : 'hidden']">
+        <a  (click)="openMenu()" href="javascript:void(0)" [ngxScrollTo]="'#about'" 
+          class="block menu-item text-center text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">About
+          Us</a>
+        <a (click)="openMenu()" href="javascript:void(0)" [ngxScrollTo]="'#program'" 
+          class="block menu-item text-center  text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Programmes</a>
+        <a (click)="openMenu()" href="javascript:void(0)" [ngxScrollTo]="'#team'" 
+          class="block menu-item text-center text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Team</a>
+        <a (click)="openMenu()" href="javascript:void(0)" [ngxScrollTo]="'#partners'" 
+          class="block menu-item text-center  text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Partners</a>
+        <a (click)="openMenu()" href="javascript:void(0)" [ngxScrollTo]="'#contact'" 
+          class="block menu-item text-center  text-primary-white filter drop-shadow-md font-bold font-primary hover:underline">Contact
+          Us</a>
+      </div>
+  </div>
+</nav>
+
+<!-- <nav class="md:hidden">
+  <div class="md:hidden flex justify-end items-end">
+    <button class="mobile-menu-button px-5 py-3">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" class="text-text">menu</mat-icon>
+    </button>
+  </div>
+  <div class="mobile-menu hidden md:hidden">
+    <a href="#" id="#about" class="block py-2 px-4 hover:bg-gray-200">About Us</a>
+    <a href="#" id="programmes" class="block py-2 px-4 text-sm hover:bg-gray-200">Programmes</a>
+  </div>
+</nav>
+<script>
+  // Grab HTML Elements
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  // Add Event Listeners
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script> -->

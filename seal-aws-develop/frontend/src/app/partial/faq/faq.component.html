@@ -1,0 +1,20 @@
+<section class="pt-10 pb-16">
+    <h2 class="font-raleway text-base font-extrabold leading-2 text-center md:text-5xl">FAQ</h2>
+    <p class="font-raleway text-xs font-normal leading-2 text-center md:text-xl md:mt-7">
+        Below you will find answers to the questions we get asked the most about SEAL, Singhasari SEZ or AWS:
+    </p>
+    <div class="flex flex-row justify-center pt-5 md:pt-10">
+        <div class="w-4/5 md:w-3/5">
+            <mat-accordion>
+                <mat-expansion-panel *ngFor="let f of faq " (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="font-semibold font-raleway">
+                            {{f.question}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p class="font-raleway">{{f.answear}}</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</section>
